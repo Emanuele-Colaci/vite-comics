@@ -106,7 +106,7 @@
                 width: 50%;
                 position: absolute;
                 right: 25%;
-                bottom: -39px;
+                bottom: -36px;
                 transform: translatey(-50%);
             }
         }

@@ -89,7 +89,19 @@
     </div>
     <div class="bg-grey">
         <div class="container3 content3">
-
+            <div>
+                <button>SING-UP NOW!</button>
+            </div>
+            <div>
+                <h3>FOLLOW US</h3>
+                <div class="vertical">
+                    <img src="../img/footer-facebook.png" alt="facebook">
+                    <img src="../img/footer-twitter.png" alt="twitter">
+                    <img src="../img/footer-youtube.png" alt="you-tube">
+                    <img src="../img/footer-pinterest.png" alt="pintarest">
+                    <img src="../img/footer-periscope.png" alt="periscope">
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -139,10 +151,7 @@
             h2{
                 color: #fff;
                 font-size: 17px;
-                margin: 20px 0 10px 0;
-            }
-            p{
-                margin-bottom: 2px;
+                margin: 20px 0 5px 0;
             }
             a{
                 color: grey;
@@ -158,7 +167,7 @@
         }
         .image-container {
             width: 100%;
-            height: 300px;
+            height: 21rem;
             overflow: hidden;
             display: flex;
             align-items: center;
@@ -169,5 +178,30 @@
                 width: 70%;
             }
         } 
+    }
+    .content3{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        button{
+            padding: 10px;
+            border: 2px solid $color;
+            background: none;
+            color: #fff;
+        }
+        h3{
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+            color: $color;
+        }
+        .vertical{
+            vertical-align: middle;
+            display: inline-block;
+            img{
+                margin-left: 10px;
+            }
+        }
     }
 </style>
