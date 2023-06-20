@@ -2,11 +2,13 @@
   import inizio from './components/Header.vue';
   import mezzo from './components/Main.vue';
   import fine from './components/Footer.vue';
+  import fasciaAzzurra from './components/FasciaAzzurra.vue';
   export default{
     components: {
       inizio,
       mezzo,
-      fine
+      fine,
+      fasciaAzzurra
     }
   }
 </script>
@@ -14,6 +16,7 @@
   <div>
     <inizio />
     <mezzo />
+    <fasciaAzzurra />
     <fine />
   </div>
 </template>
