@@ -58,6 +58,7 @@
         align-items: center;
         img{
             width: calc(100% / 5 );
+            margin: 20px;
             vertical-align: middle;
         }
         a{
@@ -65,7 +66,7 @@
             color: #fff;
             font-size: 10px;
             span{
-                margin-left: 10px;
+                margin-left: 5px;
             }
         }
         .svg-img {
