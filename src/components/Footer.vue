@@ -130,6 +130,7 @@
             border: 2px solid $color;
             background: none;
             color: #fff;
+            cursor: pointer;
         }
         h3{
             display: inline-block;
@@ -143,6 +144,7 @@
             padding-right: 30px;
             img{
                 margin-left: 10px;
+                cursor: pointer;
             }
         }
     }

@@ -5,22 +5,27 @@
                 images: [ 
                     {
                         image: '/src/assets/img/buy-comics-digital-comics.png',
+                        link: '#',
                         label: 'DIGITAL COMICS'   
                     },
                     {
                         image: '/src/assets/img/buy-comics-merchandise.png',
+                        link: '#',
                         label: 'DC MERCHANDISE'   
                     },
                     {
                         image: '/src/assets/img/buy-comics-subscriptions.png',
+                        link: '#',
                         label: 'SUBSCRIPTION'   
                     },
                     {
                         image: '/src/assets/img/buy-comics-shop-locator.png',
+                        link: '#',
                         label: 'COMIC SHOP LOCATOR'   
                     },
                     {
                         image: '/src/assets/img/buy-dc-power-visa.svg',
+                        link: '#',
                         label: 'DC POWER VISA', 
                         isSvg: true  
                     },
@@ -34,7 +39,7 @@
     <div>
         <div class="bg-blue">
         <div class="container1 content1">
-            <a v-for="(image, index) in images" :key="index" href="">
+            <a v-for="(image, index) in images" :key="index" :href="image.link">
                 <img :src="image.image" :class="{ 'svg-img': image.isSvg } ">
                 <span>{{ image.label }}</span>
             </a>

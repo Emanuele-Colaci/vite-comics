@@ -92,7 +92,7 @@
                 text-decoration: none;
                 color: #000;
                 font-size: 10px;
-                padding: 34px 0;
+                padding: 36px 0;
                 &:hover{
                     color: $color;
                     border-bottom: 3px solid $color;
