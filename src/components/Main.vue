@@ -88,13 +88,40 @@ import fumetti from '../components/AppFumetti.vue';
 </script>
 <template>
     <div class="bg-black">
-        <div class="container">
-            <fumetti v-for="(fumetto, index) in listaFumetti" :key="index" :img="fumetto.thumb" :series="fumetto.series"/>
+        <img src="../assets/img/jumbotron.jpg" alt="jumbotron">
+        <div class="postion-relative">
+            <button class="position">CURRENT SERIES</button>
+            <div class="container">
+                <fumetti v-for="(fumetto, index) in listaFumetti" :key="index" :img="fumetto.thumb" :series="fumetto.series"/>
+                <button>LOAD MORE</button>
+            </div>
         </div>
     </div>
 </template>
 <style lang="scss" scoped>
+    @use '../styles/partials/variables' as *;
     .bg-black{
+        background-color: #1c1c1c;
+        position: relative;
+        .position{
+            position: absolute;
+            top: -20px;
+            left: 10%;
+            border: none;
+            padding: 10px 20px;
+            background-color: $color;
+            color: #fff;
+            cursor: pointer;
+        }
+        .postion-relative{
+            position: relative;
+        }
+    }
+    img{
+        width: 100%;
+        height: 270px;
+        object-fit: cover;
+        object-position: top;
         background-color: #1c1c1c;
     }
     .container{
@@ -102,6 +129,15 @@ import fumetti from '../components/AppFumetti.vue';
         margin: 0 auto;
         padding: 30px 0;
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
+        
+        button{
+            border: none;
+            padding: 5px 30px;
+            background-color: $color;
+            color: #fff;
+            cursor: pointer;
+        }
     }
 </style>
