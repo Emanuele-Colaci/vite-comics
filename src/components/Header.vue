@@ -52,7 +52,9 @@
 <template>
     <div class="bg-white">
         <div class="container">
-            <img src="../img/dc-logo.png" alt="logo">
+            <a href="/">
+                <img src="../assets/img/dc-logo.png" alt="logo">
+            </a>
             <ul>
                 <li v-for="(link, index) in links" :key="index">
                     <a href="#" :class="link.active ? 'active' : ''">
@@ -70,7 +72,7 @@
     }
 
     .container{
-        max-width: 1024px;
+        max-width: 1170px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -84,31 +86,22 @@
             li{
                 display: inline-block;
                 margin: 0 10px;
+                
             }
             a{
                 text-decoration: none;
                 color: #000;
                 font-size: 10px;
+                padding: 34px 0;
                 &:hover{
                     color: $color;
+                    border-bottom: 3px solid $color;
                 }
             }
         }
         .active{
             color: $color;
-            position: relative;
-            
-            &:after{
-                display: block;
-                content: '';
-                background-color: $color;
-                height: 3px;
-                width: 50%;
-                position: absolute;
-                right: 25%;
-                bottom: -36px;
-                transform: translatey(-50%);
-            }
+            border-bottom: 3px solid $color;
         }
     }
     

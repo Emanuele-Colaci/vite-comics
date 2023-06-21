@@ -15,7 +15,7 @@
         background-color: #1c1c1c;
     }
     .container{
-        max-width: 1024px;
+        max-width: 1170px;
         margin: 0 auto;
         padding: 30px 0;
         h2{

@@ -47,7 +47,7 @@
             </div>
             <div class="col">
                 <div class="image-container">
-                    <img src="../img/dc-logo-bg.png" alt="logo-bg">
+                    <img src="../assets/img/dc-logo-bg.png" alt="logo-bg">
                 </div>
             </div>
         </div>
@@ -60,11 +60,11 @@
             <div>
                 <h3>FOLLOW US</h3>
                 <div class="vertical">
-                    <img src="../img/footer-facebook.png" alt="facebook">
-                    <img src="../img/footer-twitter.png" alt="twitter">
-                    <img src="../img/footer-youtube.png" alt="you-tube">
-                    <img src="../img/footer-pinterest.png" alt="pintarest">
-                    <img src="../img/footer-periscope.png" alt="periscope">
+                    <img src="../assets/img/footer-facebook.png" alt="facebook">
+                    <img src="../assets/img/footer-twitter.png" alt="twitter">
+                    <img src="../assets/img/footer-youtube.png" alt="you-tube">
+                    <img src="../assets/img/footer-pinterest.png" alt="pintarest">
+                    <img src="../assets/img/footer-periscope.png" alt="periscope">
                 </div>
             </div>
         </div>
@@ -75,7 +75,7 @@
    
 
     .bg-image{
-        background-image: url(../img/footer-bg.jpg);
+        background-image: url(../assets/img/footer-bg.jpg);
     }
 
     .bg-grey{
@@ -83,7 +83,7 @@
     }
 
     .container2, .container3{
-        max-width: 1070px;
+        max-width: 1170px;
         margin: 0 auto;
     }
     
@@ -109,14 +109,12 @@
             }
         }
         .image-container {
-            width: 100%;
+            width: 40rem;
             height: 21rem;
             overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
-            object-fit: contain;
-            object-fit: cover;
             img{
                 width: 70%;
             }
@@ -142,6 +140,7 @@
         .vertical{
             vertical-align: middle;
             display: inline-block;
+            padding-right: 30px;
             img{
                 margin-left: 10px;
             }
